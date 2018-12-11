@@ -1,0 +1,9 @@
+---
+# vars file for ansible-servicenow-cmdb
+
+severity: 2
+priority: 2
+category: network
+SN_USERNAME: "{{ vaulted_servicenow_username }}"
+SN_PASSWORD: "{{ vaulted_servicenow_password }}"
+SN_INSTANCE: dev71868

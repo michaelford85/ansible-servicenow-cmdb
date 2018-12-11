@@ -1,0 +1,12 @@
+---
+# tasks file for ansible-servicenow-cmdb
+
+- name: include service now credentials
+  include_vars:
+    file: servicenow-credentials.yml
+
+- name: Add Network Element to Service Now CMDB
+  block:
+    - name: Add Network Element to Service Now CMDB
+      include_tasks: snow-populate-ios.yml
+  when: populate_cmdb
