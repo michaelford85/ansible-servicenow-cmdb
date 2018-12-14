@@ -1,9 +1,4 @@
 ---
-# - name: include vars
-#   include_vars: default_vars.yml
-#
-# - name: include vars
-#   include_vars: servicenow_credentials.yml
 
 - name: set vendor fact by network platform
   block:
